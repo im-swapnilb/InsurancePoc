@@ -58,7 +58,7 @@ def result():
             to_predict_list[4] = 0
 
         to_predict_list = list(map(float, to_predict_list))
-        result = ValuePredictor(to_predict_list)
+        result = round(ValuePredictor(to_predict_list),2)
         return render_template("result.html", prediction = result)
 
 
